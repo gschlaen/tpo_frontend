@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800;900&family=Roboto:wght@100;300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navbar .logo {
+    height: 60px;
+    grid-column: 1/2;
+    margin-left: 15px;
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/9;
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar input[type="checkbox"], .navbar i {
+    color: #fff;
+    display: none;
+}

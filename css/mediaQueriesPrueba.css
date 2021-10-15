@@ -1,0 +1,78 @@
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+  body {
+      background-color: #181818;
+  }
+}
+  
+  
+@media screen and (max-width: 640px) {
+  .navbar {
+    position: relative;
+  }
+  
+  .navbar .menu {
+    position: absolute;
+    width: 40%;
+    height: 205px;
+    display: none;
+    align-items: center;
+    background-color: #000;
+    margin-top: 260px;
+    transform: translateX(150%);
+  }
+  
+  .navbar input[type="checkbox"], .navbar i {
+    display: block;
+    grid-column: 8/9;
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 10px;
+    width: 38px;
+    height: 38px;
+  }
+  
+  .navbar .fa-bars, .navbar .fa-times {
+    font-size: 38px;
+    pointer-events: none;
+  }
+  
+  .navbar input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .navbar {
+    color: white;
+    position: relative;
+    min-height: 38px;
+  }
+  
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+    max-width: 200px;
+    background: #000;
+    text-shadow: 1px 1px #181818;
+}
+  
+  .navbar input:checked ~ .menu {
+    display: grid;
+  }
+  
+  .navbar input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .navbar input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+    }
+  
