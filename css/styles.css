@@ -111,8 +111,12 @@ body {
 .item img {
     width: 250px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
+.item img:hover {
+    filter: drop-shadow(5px 5px 5px rgb(172, 171, 171));
+}
 
 .item p:nth-child(2) {
     margin-top: 10px;
@@ -165,3 +169,57 @@ footer p {
     grid-row: 4/5;
 }
 
+/*    SIGNUP    */
+.signup {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+}
+.signup div {
+    padding: 20px;
+  }
+.container {
+    width: 373px;
+    height: 460px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    margin: 0px auto;
+    background-color: #ffffff;
+}
+
+.signup legend {
+    text-align: center;
+}
+
+.signup input {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup input[type=text], .signup input[type=password], .signup input[type=email] {
+    width: 290px;
+    padding: 12px 20px;
+    margin: 25px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .signup input[type=submit] {
+    width: 290px;
+    background-color: #4194d8;
+    color: white;
+    padding: 14px 110px;
+    margin: 50px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signup input[type=submit]:hover {
+    background-color: #377db6;
+  }
+
+  .signup input[type=text]:focus, .signup input[type=password]:focus, .signup input[type=email]:focus  {
+    border: 1px solid #4194d8;
+  }
