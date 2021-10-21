@@ -14,7 +14,28 @@
         width: 25vw;
     }
 
+    /*    CONTACTO    */
+    .grid {
+      height: 100%;
+      margin-bottom: 50px;
+    }
+
+    .imagen img {
+      width: 100%;
+    }
+
+    .iframe iframe {
+      width: 90%;
+      height: 30vw;
+    }
     
+    .texto h3 {
+      font-size: 23px;   
+  }
+    
+    .texto p {
+        font-size: 17px;
+    }
 }
 
 
@@ -121,4 +142,26 @@
     align-items: center;
   }
 
-    }
+/*    CONTACTO    */
+.grid {
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.imagen img {
+  width: 100%;
+}
+
+.iframe iframe {
+  width: 90%;
+  height: 30vw;
+}
+
+.texto h3 {
+  font-size: 21px;   
+}
+
+.texto p {
+    font-size: 15px;
+}
+}
