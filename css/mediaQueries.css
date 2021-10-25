@@ -53,12 +53,12 @@
     .navbar .menu {
         position: absolute;
         width: 40%;
-        height: 250px;
+        height: 300px;
         display: grid;
         align-items: center;
         background-color: #000;
-        margin-top: 290px;
-        transform: translateX(250%);
+        margin-top: 360px;
+        right: -120px;
 
     }
 
@@ -91,15 +91,13 @@
     display: grid;
     animation-name: desplegar;
     animation-duration: 0.6s;
-    transform: translateX(150%);
+    right: 0px;
   }
 
   .navbar input:not(:checked)~ .menu {
-    animation-name: plegar;
+    animation-name: desplegar;
     animation-duration: 1s;
-    transform: translateX(250%);
     display: none;
-    
   }
   
   .navbar input:checked ~ .fa-bars {
@@ -112,21 +110,13 @@
 
   @keyframes desplegar {
     from {
-        transform: translateX(250%); 
+        right: -120px; 
     }
     to { 
-        transform: translateX(150%);
+        right: 0px; 
     }
   }
 
-  @keyframes plegar {
-      from {
-          transform: translateX(150%); 
-      }
-      to { 
-          transform: translateX(250%);
-      }
-  }
 
 /*   SECTION   */
 .content .info-content {
@@ -156,7 +146,7 @@
 }
 
 .iframe iframe {
-  width: 90%;
+  width: 100%;
   height: 30vw;
 }
 
@@ -166,5 +156,19 @@
 
 .texto p {
     font-size: 15px;
+}
+
+.contacto-redes .texto, .contacto-direccion .texto {
+  grid-column: 1/6;
+}
+
+.contacto-correo .imagen {
+  width: 100%;
+  height: auto;
+  grid-column: 1/7;
+}
+
+.contacto-correo .texto {
+  grid-column: 8/12;
 }
 }
